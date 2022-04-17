@@ -1,2 +1,3 @@
-# study_opencv
-Study opencv, learn to use some opecv interfaces
+# study
+* study notes of reading some books
+* Some useful code
