@@ -19,9 +19,9 @@ typedef enum {
 
 static LogLevel g_log_lvl = LOG_LEVEL_INFO;
 
-const char *g_log_lvl_str[] = {"[F]", "[E]", "[W]", "[I]", "[D]", "[T]"};
+static const char *g_log_lvl_str[] = {"[F]", "[E]", "[W]", "[I]", "[D]", "[T]"};
 
-void Log(LogLevel lvl, const char *fmt, ...) {
+static inline void Log(LogLevel lvl, const char *fmt, ...) {
   char buffer[1024];
   va_list arg;
 
